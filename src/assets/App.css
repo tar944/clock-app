@@ -1,0 +1,148 @@
+.App {
+  text-align: center;
+}
+
+.clock {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  color: #444;
+  text-align: center;
+}
+.tool_tip {
+  position: absolute;
+  border-radius: 10%;
+  margin: 5px;
+  padding: 5px;
+  font-size: medium;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 2;
+  color: #444444;
+  text-align: center;
+}
+
+.clock::after {
+  background: #aaa;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #fff;
+}
+
+.hour_hand {
+  position: absolute;
+  width: 6px;
+  height: 60px;
+  background: #222;
+  top: 30%;
+  left: 49%;
+  transform-origin: bottom;
+}
+
+.min_hand {
+  position: absolute;
+  width: 4px;
+  height: 80px;
+  background: #444;
+  top: 22.5%;
+  left: 49%;
+  transform-origin: bottom;
+}
+
+.sec_hand {
+  position: absolute;
+  width: 2px;
+  height: 118px;
+  background: red;
+  top: 10.5%;
+  left: 50%;
+  transform-origin: bottom;
+}
+
+.name{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: 15%;
+  color: lightslategray;
+  font-size: small;
+}
+
+.clock span {
+  position: absolute;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+}
+
+.num_12 {
+  top: 10px;
+  left: 46%;
+}
+
+.num_1 {
+  top: 10%;
+  right: 26%;
+}
+
+.num_11 {
+  top: 10%;
+  left: 26%;
+}
+
+.num_2 {
+  top: 25%;
+  right: 10%;
+}
+
+.num_3 {
+  right: 10px;
+  top: 46%;
+}
+
+.num_4 {
+  right: 30px;
+  top: 67%;
+}
+
+.num_5 {
+  right: 78px;
+  top: 80%;
+}
+
+.num_6 {
+  bottom: 10px;
+  left: 50%;
+}
+
+.num_7 {
+  left: 80px;
+  top: 82%;
+}
+
+.num_8 {
+  left: 30px;
+  top: 67%;
+}
+
+.num_9 {
+  left: 10px;
+  top: 46%;
+}
+
+.num_10 {
+  top: 25%;
+  left: 10%;
+}
